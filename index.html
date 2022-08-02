@@ -7,84 +7,109 @@
     <title>Резюме</title>
     <meta name="description" content="Небольшое резюме Гретченко Сергея">
     <meta name="keywords" content="html, css, резюме">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="Фотка.jpg" width="200px"></img>
+<div class="container">
+    <div class="info">
+       
+        <img src="Фотка.jpg"  class="foto"></img>
+       
+        <div class="info-text">
+           
+            <h1>Гретченко Сергей</h1>
 
-    <h1>Гретченко Сергей</h1>
+            <p>Меня зовут Сергей, я занимаюсь разработкой аэронавигационных паспортов посадочных площадок, аэродромов, предназначенных для взлета и посадки как вертолетов, так и самолетов.</p>
+            
+            <p>Помимо работы увлекаюсь спортом и чтением различного рода литературы.</p>
 
-    <p>Меня зовут Сергей, я занимаюсь разработкой <strong>аэронавигационных паспортов посадочных площадок</strong>, аэродромов, предназначенных для взлета и посадки как вертолетов, так и самолетов.</p>
+        </div> 
+
+    </div>
+
+    <div class="messenger bg-yellow">
+
+        <h4>Мои соц. сети:</h4>
+
+        <a href="https://vk.com/gsergey1998" alt="ссылка на ВК" target="_blank">VK</a>
+
+        |
+
+        <a href="https://t.me/GretchenkoSergey" alt="ссылка на Telegram" target="_blank">Telegram</a>
+
+    </div>
+
+    <div class="hobby card bg-red">
+
+        <h3>Мои хобби</h3>
+
+        <ol class="list">
+            <li>Физика</li>
+            <li>Математика</li>
+            <li>Crossfit</li>
+            <li>Сноуборд</li>
+        </ol>
     
-    <p>Помимо <em>работы</em> увлекаюсь спортом и чтением различного рода литературы.</p>
+    </div>
 
-    <h3>Мои хобби</h3>
+    
 
-    <ol>
-        <li>Физика</li>
-        <li>Математика</li>
-        <li>Crossfit</li>
-        <li>Сноуборд</li>
-    </ol>
+    <div class="exp card bg-green">
 
-    <h3>Мои соц. сети:</h3>
+        <h3>Опыт работы</h3>
 
-    <a href="https://vk.com/gsergey1998" alt="ссылка на ВК" target="_blank">VK</a>
+        <table class="table">
+            <!-- <thead>
+                <tr>
+                    <th>Место работы</th>
+                    <th>Занимаемая должность</th>
+                    <th>Год</th>
+                </tr>
+            </thead> -->
+            <tbody>
+                <tr>
+                    <td>ООО"Компания "СТОК"</td>
+                    <td>Специалист по АНИ</td>
+                    <td>2020-2021</td>
+                </tr>
 
-    |
+                <tr>
+                    <td>ООО "САИ ВС"</td>
+                    <td>Ведущий специалист по АНИ</td>
+                    <td>2021-сейчас</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <a href="https://t.me/GretchenkoSergey" alt="ссылка на Telegram" target="_blank">Telegram</a>
+    </div>
 
-    <h3>Опыт работы</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Место работы</th>
-                <th>Занимаемая должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ООО"Компания "СТОК"</td>
-                <td>Специалист по АНИ</td>
-                <td>2020-2021</td>
-            </tr>
-
-            <tr>
-                <td>ООО "САИ ВС"</td>
-                <td>Ведущий специалист по АНИ</td>
-                <td>2021-сейчас</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <form class="form">
         <h3>Связаться со мной</h3>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
 
-    <form>
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+            <div class="form-group">
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
         </div>
 
-        <div>
-            <label for="email">email</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-
-        <div>
+        <div class="form-group">
             <label for="textarea">Ваше сообщение:</label>
-            <br>
             <textarea  id="textarea" cols="30" rows="10"  placeholder="Введите сообщение..."></textarea>
         </div>
 
-        <div>
-            <button type="submit">Отправить!</button>
+        <div class="form-group">
+            <button type="submit" class="but">Отправить!</button>
             <!-- <br>
             <input type="button" value="Отправить!"> -->
         </div>
     </form>
 
-
+</div>
 </body>
 </html>
