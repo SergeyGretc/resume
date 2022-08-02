@@ -1,5 +1,5 @@
 # Моё resume
 
-#Результат смотри тут
+# Результат смотри тут
 
-[Моя первая работа по html/css] (https://sergeygretc.github.io/resume/)
+[Моя первая работа по html/css](https://sergeygretc.github.io/resume/)
